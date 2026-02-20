@@ -1,0 +1,238 @@
+/* Mayberry Webcraft – Site Styles */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #2c5f8a;
+  --accent:  #f4a832;
+  --light:   #f7f9fc;
+  --dark:    #1a1a2e;
+  --text:    #333;
+  --muted:   #666;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: var(--light);
+  line-height: 1.7;
+}
+
+/* ── Header / Hero ────────────────────────────────────── */
+header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+header .logo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+header .logo span {
+  color: var(--accent);
+}
+
+header .tagline {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+header .cta {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 14px 36px;
+  background: var(--accent);
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+header .cta:hover {
+  opacity: 0.85;
+}
+
+/* ── Nav ──────────────────────────────────────────────── */
+nav {
+  background: var(--dark);
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 14px 20px;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* ── Sections ─────────────────────────────────────────── */
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+section .section-sub {
+  color: var(--muted);
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+
+/* ── Services grid ────────────────────────────────────── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.service-card .icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+/* ── Why Us ───────────────────────────────────────────── */
+#why {
+  background: #fff;
+  max-width: 100%;
+  padding: 60px 20px;
+}
+
+#why .inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.why-item {
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.why-item .big {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.why-item p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+/* ── Contact ──────────────────────────────────────────── */
+#contact {
+  background: var(--primary);
+  max-width: 100%;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact .inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#contact .section-sub {
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 36px;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 8px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-item .contact-icon {
+  font-size: 1.5rem;
+}
+
+.contact-item a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+footer {
+  background: var(--dark);
+  color: #888;
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 0.9rem;
+}
+
+footer span {
+  color: var(--accent);
+}
