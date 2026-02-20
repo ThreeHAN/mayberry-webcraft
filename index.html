@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayberry Webcraft</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #f5f0eb;
+      color: #2c2c2c;
+    }
+
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      letter-spacing: 0.04em;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: #b0bec5;
+      font-style: italic;
+    }
+
+    nav {
+      background: #1a252f;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.75rem 1rem;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    nav a:hover { color: #e67e22; }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #555;
+      max-width: 660px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #e67e22;
+      color: #fff;
+      padding: 0.75rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+
+    .cta-button:hover { background: #cf6d17; }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1.5rem;
+      flex: 1 1 220px;
+      max-width: 260px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .service-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.6rem;
+      color: #2c3e50;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+
+    #contact {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      margin-bottom: 3rem;
+    }
+
+    #contact h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+
+    #contact p {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      color: #444;
+    }
+
+    #contact a {
+      color: #e67e22;
+      text-decoration: none;
+    }
+
+    #contact a:hover { text-decoration: underline; }
+
+    footer {
+      background: #2c3e50;
+      color: #b0bec5;
+      text-align: center;
+      padding: 1.25rem 1rem;
+      font-family: Arial, sans-serif;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mayberry Webcraft</h1>
+    <p>Crafting beautiful websites for your business</p>
+  </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <h2>Welcome to Mayberry Webcraft</h2>
+      <p>
+        We build clean, modern websites that help small businesses grow online.
+        From simple landing pages to full business sites, we handle the design
+        and development so you can focus on what you do best.
+      </p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </section>
+
+    <section id="services" class="services">
+      <div class="service-card">
+        <div class="icon">🎨</div>
+        <h3>Web Design</h3>
+        <p>Attractive, professional designs tailored to your brand and audience.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Fast, reliable sites built with clean code and modern standards.</p>
+      </div>
+      <div class="service-card">
+        <div class="icon">📱</div>
+        <h3>Mobile-Friendly</h3>
+        <p>Every site we build looks great on phones, tablets, and desktops.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>📞 <a href="tel:+18325151887">832-515-1887</a></p>
+      <p>✉️ <a href="mailto:andy@mayberrywebcraft.com">andy@mayberrywebcraft.com</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mayberry Webcraft. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
